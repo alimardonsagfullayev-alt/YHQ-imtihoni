@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YHQ Akademiya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="brand">
+            <div class="logo">YHQ</div>
+            <div>
+                <h1>YHQ Akademiya</h1>
+                <p>Haydovchilik imtihoniga tayyorgarlik</p>
+            </div>
+        </div>
+        <button id="themeButton" class="theme-button" type="button">🌙</button>
+    </header>
+
+    <main class="container">
+        <section id="homePage" class="panel">
+            <div class="hero">
+                <span class="eyebrow">YHQ • TEST • IMTIHON</span>
+                <h2>Yo‘l harakati qoidalarini o‘rganing</h2>
+                <p>Testlarni yeching, bilimlaringizni tekshiring va imtihonga tayyorlaning.</p>
+            </div>
+
+            <div class="mode-grid">
+                <button id="practiceButton" class="mode-card" type="button">
+                    <span class="mode-icon">📘</span>
+                    <strong>Test ishlash</strong>
+                    <span>Javob va izohlarni o‘rganing</span>
+                </button>
+
+                <button id="examButton" class="mode-card" type="button">
+                    <span class="mode-icon">📝</span>
+                    <strong>Imtihon</strong>
+                    <span>20 ta savol · 20 daqiqa</span>
+                </button>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <strong>20</strong>
+                    <span>Imtihon savollari</span>
+                </div>
+                <div class="info-card">
+                    <strong>18/20</strong>
+                    <span>O‘tish mezoni</span>
+                </div>
+                <div class="info-card">
+                    <strong>100%</strong>
+                    <span>Bilimingizni sinang</span>
+                </div>
+            </div>
+
+            <div class="author-card">
+                <div class="author-icon">©</div>
+                <div>
+                    <strong>Yaratuvchi: Sag'dullayev Alimardon</strong>
+                    <p>YHQ Akademiya — haydovchilik imtihoniga tayyorlovchi veb-dastur.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quizPage" class="panel hidden">
+            <div class="quiz-top">
+                <button id="homeButton" class="secondary-button" type="button">← Bosh sahifa</button>
+                <span id="modeLabel" class="mode-label">Test rejimi</span>
+                <span id="timer" class="timer hidden">20:00</span>
+            </div>
+
+            <div class="progress-info">
+                <span id="questionCounter">1 / 20</span>
+                <span id="scoreCounter">To‘g‘ri javoblar: 0</span>
+            </div>
+
+            <div class="progress-track">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+
+            <h2 id="questionText" class="question-text">Savol yuklanmoqda...</h2>
+
+            <div id="answerOptions" class="answer-options"></div>
+
+            <div id="explanation" class="explanation hidden">
+                <strong id="explanationTitle">Izoh</strong>
+                <p id="explanationText"></p>
+            </div>
+
+            <div class="quiz-bottom">
+                <span id="answerStatus">Javobni tanlang</span>
+                <button id="nextButton" class="primary-button" type="button" disabled>
+                    Keyingi →
+                </button>
+            </div>
+        </section>
+
+        <section id="resultPage" class="panel hidden">
+            <div class="result-header">
+                <div id="resultIcon" class="result-icon">🏁</div>
+                <h2 id="resultTitle">Imtihon yakunlandi</h2>
+                <p id="resultMessage"></p>
+            </div>
+
+            <div class="result-grid">
+                <div class="result-card">
+                    <span>To‘g‘ri javoblar</span>
+                    <strong id="resultCorrect">0 / 20</strong>
+                </div>
+                <div class="result-card">
+                    <span>Noto‘g‘ri javoblar</span>
+                    <strong id="resultWrong">0</strong>
+                </div>
+                <div class="result-card">
+                    <span>Natija</span>
+                    <strong id="resultPercent">0%</strong>
+                </div>
+            </div>
+
+            <div id="resultStatus" class="result-status"></div>
+
+            <div class="result-actions">
+                <button id="retryButton" class="primary-button" type="button">Qayta ishlash</button>
+                <button id="resultHomeButton" class="secondary-button" type="button">Bosh sahifa</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© YHQ Akademiya · Yaratuvchi: Sag'dullayev Alimardon</p>
+        <p class="footer-note">O‘quv maqsadida. Rasmiy imtihon savollari bilan farq qilishi mumkin.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
